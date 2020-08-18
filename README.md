@@ -9,6 +9,7 @@
 
 
 ## What is JavaScript30
+
 Javascirpt30 is a 30 day challenge created by Wes BOS. The project provides 30 video tutorials, 30 challenge documents and 30 challenge solution source codes available for free. The goal is to help people write in vanilla JavaScript, without frameworks and libraries, without compilers and references.
 The slogan of this project is:
 > Build 30 things in 30 days with 30  tutorial
