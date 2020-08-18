@@ -1,10 +1,13 @@
 # JavaScript30 - 30 Day JavaScript Challenge
 
 Create Date: 10/08/2020
+
 Last Update Date: 18/08/2020
 
 > Repo by [kongpeter](github.com/kongpeter)
+
 >Course created by [Wes Bos](https://github.com/wesbos)
+
 > Join the challenge (for free!) here - [JavaScript30](https://javascript30.com)
 
 
