@@ -20,11 +20,11 @@ The slogan of this project is:
 ## About JavaScript30
 New tools can help us improve our productivity, but the original JavaScript must be the missing part of many people's knowledge structure. If you want to explore it, please follow this guide to explore the original world of JavaScript.
 
-Another reason for writing this guide is that after reading the guides written by [soyaine](github.com/soyaine), I decided to follow his examples and sort out my ideas while taking notes. I believe that learning by use could be the best way to learn. I hope this guide can help people who want to practice, especially those who want to get started in JavaScript.
+Another reason for writing this guide is that after reading the guides written by [soyaine](https://github.com/soyaine), I decided to follow his examples and sort out my ideas while taking notes. I believe that learning by use could be the best way to learn. I hope this guide can help people who want to practice, especially those who want to get started in JavaScript.
 
 
 
 ## About Me
-
+Currently, I am a master of information technology student from the university of Melbourne. I'd like to be a front-end developer
 
 
