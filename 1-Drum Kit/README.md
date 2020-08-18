@@ -76,3 +76,23 @@ const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
 
 ### How to ensure that when the key is pressed and held down, the continuous drumming sound can be heard immediately?
 
+Set the timestamp to 0 before playing the audio.
+
+````javascript
+var audio = document.getElementById("video"); 
+audio.currentTime = 0;
+audio.play();
+````
+
+### How to restore the page button?
+Using a event called [`transitionend`](https://developer.mozilla.org/zh-CN/docs/Web/Events/transitionend), which is triggered after the CSS transition ends. We can use this event to remove the pattern after each drum effect (larger size, color change) is completed.
+
+In this page, there are more than one style attribute of `transition` (`box shadow`, `transform`, `border color`), so you need to add a judgment statement to remove the style only once when a key event occurs.
+
+````javascript
+funciton remove(event) {
+  if (event.propertyName !== 'border-left-color') return;
+  this.classList.remove('playing');
+  // event.target.classList.remove('playing');
+}
+````
