@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+  font-size: 11px;
   background: url(https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) bottom center;
   background-size: cover;
 }
@@ -34,8 +34,8 @@ body,html {
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #008cff;
+  box-shadow: 0 0 1rem #ff0062;
 }
 
 kbd {
