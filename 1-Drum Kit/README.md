@@ -17,12 +17,12 @@ Simulate a drum page. When the user presses the *asdfghjkl* keys on the keyboard
 ## Step by Step guide
 
 1. Add keyboard event monitor. Add `keydown` event to Windows.
-2.  Corresponding event handler.
-   i. Get key code.
-   ii. get `data-key`.
+2.  Corresponding event handler.\
+   i. Get key code.\
+   ii. get `data-key`.\
    iii. Handle elements. Play sound, change style.  
 3. Add `transitionened` to all `div.key`
-   i. Get all elements of `key`.
+   i. Get all elements of `key`.\
    ii. Add monitors.
 4. Event handler with style removal.
 
