@@ -21,7 +21,7 @@ Simulate a drum page. When the user presses the *asdfghjkl* keys on the keyboard
    i. Get key code.\
    ii. get `data-key`.\
    iii. Handle elements. Play sound, change style.  
-3. Add `transitionened` to all `div.key`
+3. Add `transitionened` to all `div.key`\
    i. Get all elements of `key`.\
    ii. Add monitors.
 4. Event handler with style removal.
