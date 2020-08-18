@@ -33,12 +33,12 @@ Simulate a drum page. When the user presses the *asdfghjkl* keys on the keyboard
 ``constant``: Declare a read-only constant. The value of the identifier can only be assigned once
 
 ````javascript
-          var a = 1;
-          var b = 2;
-          //No module
-          console.log("Three is" + (a + b) + "Not" + (2 * a + b)); //"Three is 3 but 4"
-          //Use module
-          console.log(`Three is${a + b}but${2 * a + b}`); //"Three is 3 but 4"
+var a = 1;
+var b = 2;
+//No module
+console.log("Three is" + (a + b) + "Not" + (2 * a + b)); //"Three is 3 but 4"
+//Use module
+console.log(`Three is${a + b}but${2 * a + b}`); //"Three is 3 but 4"
 ````
 
 
@@ -62,4 +62,17 @@ nums.forEach(function (v) {
 })
 ```
 
+
+## Difficulties Solutions
+
+### How to match keyboard with page buttons?
+The way of the connection is the `keycode` attribute in the `Keydown` event. The value of the `keycode` attribute is the same as that of the ASCII code (corresponding to lower case letters). At [this website](http://keycode.info/), you can view the corresponding key code by pressing the keyboard.
+In the initial page we can get, an attribute `data key` has been added to the buttons `div` and audio `audio` tags to store the corresponding key code. The purpose of this is to obtain the `keycode` attribute value of the event when the keyboard event is triggered after adding a keyboard event. This is used as a clue to operate the corresponding button and audio.
+
+````javascript
+const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`;
+const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+````
+
+### How to ensure that when the key is pressed and held down, the continuous drumming sound can be heard immediately?
 
