@@ -1,17 +1,17 @@
 # JavaScript30 - 30 Day JavaScript Challenge
 
- Create Date: 10/08/2020
+ Create Date: 10/08/2020\
  Last Update Date: 18/08/2020
 
-> Repo by [kongpeter](github.com/kongpeter)
-> Course created by [Wes Bos](https://github.com/wesbos)
+> Repo by [kongpeter](github.com/kongpeter)\
+> Course created by [Wes Bos](https://github.com/wesbos)\
 > Join the challenge (for free!) here - [JavaScript30](https://javascript30.com)
 
 
 ## What is JavaScript30
 Javascirpt30 is a 30 day challenge created by Wes BOS. The project provides 30 video tutorials, 30 challenge documents and 30 challenge solution source codes available for free. The goal is to help people write in vanilla JavaScript, without frameworks and libraries, without compilers and references.
 The slogan of this project is:
-> Build 30 things in 30 days with 30  tutorial
+> Build 30 things in 30 days with 30  tutorial\
 > No Frameworks × No Compilers × No Libraries × No Boilerplate
 
 
