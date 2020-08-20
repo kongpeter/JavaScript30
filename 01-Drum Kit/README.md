@@ -5,7 +5,7 @@
 ## Overiew
 Simulate a drum page. When the user presses the *asdfghjkl* keys on the keyboard, the buttons corresponding to the letters on the page become larger and brighter, and the corresponding drum beat sounds.
 
-[View it: Drum Kit](https://kongpeter.github.io/JavaScript30/1-Drum%20Kit/)
+View it: [Drum Kit](https://kongpeter.github.io/JavaScript30/1-Drum%20Kit/)
 
 ## Key Features
 
