@@ -4,7 +4,7 @@
 
 The HTML structure has been given in the document. There are three ``div``, `hour-hand`, `min-hand` and `second-hand`. Just add some CSS to change the style of the clock, use JavaScript to update the state of the pointer.
 
-View it online: [JS-Clock](google.com)
+View it online: [JS-Clock](https://kongpeter.github.io/JavaScript30/02-Clock)
 
 
 
