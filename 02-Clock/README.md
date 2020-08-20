@@ -26,5 +26,17 @@ View it online: [Clock](kongpeter.github.io/JavaScript30/02-Clock)
 - `new Date()`
 
 
+## Programming
+
+### CSS
+
+
+
+
+
+
+### JavaScript
+
+
 
 
