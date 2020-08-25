@@ -26,5 +26,5 @@ Another reason for writing this guide is that after reading the guides written b
 
 
 ## About Me
-I am currently an information technology engineering student from University of Melbourne. I'm a front-end developer. Therefore, I wrote this tutorial for another purpose: to record my learning process of the front end. This process is extremely boring and requires a lot of work. Perhaps many years from now, I will be very grateful for this period of boredom.
+I am an information technology engineering student from University of Melbourne. I'm a front-end developer. Therefore, I wrote this tutorial for another purpose: to record my learning process of the front end. This process is extremely boring and requires a lot of work. Perhaps many years from now, I will be very grateful for this period of boredom.
 
