@@ -65,6 +65,27 @@ box-shadow:
 
 ### JavaScript
 
-Using the timer to automatically update the time, the timer `setinterval` can put the operation into the execution queue at a fixed time. With this feature, the time would be updated once per second after adding the page to realize the effect of second hand rotation.
+1. Using the timer to automatically update the time, the timer `setinterval` can put the operation into the execution queue at a fixed time. With this feature, the time would be updated per second.
+
+```css
+ setInterval(setDate, 1000);
+ // setDate execute the function after every 1000ms
+ ```
+
+2. Get the HTML elements corresponding to the three pointers for subsequent operations.
 
 
+3. Program function `setDate`\
+    * Create object `Date`
+    * Obtain hour, minute and second.
+    * Use the current time info to calculate the angles of three hands.
+        ```css
+        const secondDeg = 90 + (second / 60) * 360;
+    Take the second hand as an example. Since the second hand is horizontal in the initial state of this page, the rotation angle applied to the element at zero (time start position) should be 90 degrees. It takes 60s for the second hand to turn once, so the angle value on the dial corresponding to each second is $(... S / 60s) * 360 °$.
+
+    However, in the solution given by Wes BOS, the hour hand jumps every hour like the second hand. To simulate a more real clock, this clock should move slowly to the next time point in an hour. So we can use the last minute to calculate the effect of each minute on the angle of the hour hand, which will be added to the angle of the hour hand.
+
+    ```css
+    const hourDeg = (90 + (hour / 12) * 360 + (min / 12 / 60) * 360);
+    ```
+    * Assign the angle value to the `transform` of `style` in HTML.
