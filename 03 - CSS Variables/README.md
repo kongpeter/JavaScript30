@@ -41,7 +41,7 @@ View it online: [CSS Variable](https://kongpeter.github.io/JavaScript30/03%20-%2
 # Basic knowledge
 
 ## NodeList & Array
-You can open proto to view its methods, which including foreach(), item(), keys().etc. However, `Array`'s prototype contains only methods such as map(), pop(), etc.
+You can open proto to view its methods, which including `foreach()`, `item()`, `keys()`...etc. However, `Array`'s prototype contains only methods such as `map()`, `pop()`, etc.
 
 
 
@@ -79,6 +79,30 @@ CSS filters provide some graphics effects, such as Gaussian blur, sharpening, co
 
 # Solving difficulties
 
+## How to handle parameter values (one with PX and one without)
 
+Use the suffix with `dataset`, and set `<input data sizing: PX>`:
+
+```css
+<input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+<input type="color" name="base" value="#8aa8af">
+```
+
+Get the suffix value through the `dataset.sizing` in JS:
+
+```javascript
+const suffix = this.dataset.sizing || ''; 
+```
+
+At this time, the value obtained by suffix is empty for color and 'PX' for length class.
+
+
+## How to change CSS value by JS?
+
+The JavaScript `document.documentElement` represents the root element of the document. In order to change the global CSS variables, we could write the following codes:
+
+```javascript
+document.documentElement.style.setProperty('--base', '#fff');
+```
 
 
