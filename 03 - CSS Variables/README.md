@@ -9,8 +9,32 @@ View it online: [CSS Variable](https://kongpeter.github.io/JavaScript30/03%20-%2
 
 # Characteristics Involved
 
+* `:root`
+* `var(--xxx)` CSS Variable
+* `filter: blue()`
+* Event: `change`, `mousemove`
 
 
+# Programming
+
+## CSS
+
+* Declare the global CSS variable (`:root`) 
+* Apply changed CSS value to the corresponding element `<image>` 
+* Processing the value of title
+
+
+
+## Update CSS by JS
+
+* Get `input` element
+* Add listening event to each `input` to trigger the update operation when the value changed
+* Add event monitoring when mouse over
+* Write methods to handle update operations
+    * Get parameter value suffix
+    * Get parameter name (blur, spacing, color)
+    * Get parameter value
+    * Assign value to CSS
 
 
 
