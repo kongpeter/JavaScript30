@@ -36,3 +36,23 @@ console.table(table name)
 
 
 ## Related knowledge
+
+### [filter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+
+
+
+
+
+
+
+### [map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+
+
+
+
+
+
+
+### [sort](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
