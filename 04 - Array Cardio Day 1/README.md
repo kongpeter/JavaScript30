@@ -13,7 +13,7 @@ The document provides an `inventor` array for initial operation. Based on this a
 
 We often use `console.log()` as output in console. However, there is an amazing way to output a table:
 
-```css
+```js
 console.table(table name)
 ```
 
