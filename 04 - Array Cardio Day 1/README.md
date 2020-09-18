@@ -39,8 +39,25 @@ console.table(table name)
 
 ### [filter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
+Filtering operation is a bit like the `select` statement in SQL. Ouput the component array whose running result is true.
 
+```js
+const __fifteen = inventors.filter(function(inventor) {
+  if (inventor.year >= 1500 && inventor.year < 1600 ) {
+	  return true;
+  } else {
+      return false;
+  }
+});
+console.table(__fifteen);
+```
 
+The arrow function has been mentioned previously. It can be simplified with following codes:
+
+```js
+const fifteen = inventors.filter(inventor =>(inventor.year >= 1500 && inventor.year < 1600));
+console.table(fifteen);
+```
 
 
 
@@ -48,11 +65,56 @@ console.table(table name)
 
 ### [map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
+Map: process each element in the array and return a new array with processed elements.
 
-
-
+```js
+// name in inventors
+const fullNames = inventors.map(inventor => inventor.first + ' ' + inventor.last);
+```
 
 
 
 
 ### [sort](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+By default, `Array.prototype.sort()` will sort the array in ascending order as a string (10 before 2), but sort can also take a function as an argument. Therefore, when sorting numbers, you need to set a comparison function yourself. Examples are as follows:
+
+```js
+const __ordered = inventors.sort((a, b) => (a > b) ? 1 : -1);
+console.table(__ordered);
+```
+
+
+### Combine filter and map
+
+```js
+const cate = document.querySelectorAll('.subject-list h2 a');
+  const book = links
+			.map(link => link.title)
+            .filter(title => title.includes('CSS'));
+```
+
+### [reduce](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
+This is a method of merging arrays. It takes a function as an argument (this function can be understood as an accumulator). It will traverse all the elements in array, then calculate a final return value, which is the first parameter of the accumulator. Examples shown as follows:
+
+```js
+[0,1,2,3,4].reduce(function(previousValue, currentValue, index, array){
+  return previousValue + currentValue;
+});
+```
+
+We need to count the values of each elememts in a given array. We can use this method to store the static information into a new object in the accumulator, and finally return the static value.
+
+```js
+ const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+  const reduce = data.reduce( (obj, item) => {
+	  if( !obj[item]  ) {
+		  obj[item] = 0;
+	  }
+		  obj[item]++;
+		  return obj;
+  }, {});
+  console.log(reduce);
+  ```
+
